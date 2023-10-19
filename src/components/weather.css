@@ -1,0 +1,163 @@
+.container{
+    padding-bottom: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: auto;
+    height: 900px;
+    width: 700px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #22d3ee;
+}
+
+.search-icon{
+   
+    height: 30px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #fff;
+    
+    
+}
+.search{
+    
+    width: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+}
+.search-input{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+input{
+    width: 350PX;
+    height: 60PX;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 28px;
+}
+.humidity-icon{
+    display: flex;
+    margin: 10px;
+    color: white;
+    font-size: 32px;
+    height: 60px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.wind-icon{
+    display: flex;
+    margin: 10px;
+    color: white;
+    font-size: 32px;
+    height: 60px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding-top: 20px;
+}
+.data{
+/*     
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.info{
+    width: 300px;
+    height: 180px;
+    margin: auto;
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 12px;
+    background-color: darkorchid;
+}
+
+
+.title{
+    color: #fff;
+    margin: auto;
+}
+/* .today{
+    color: white;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.wheather-container{
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: darkorchid;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+
+}
+.temp-loc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wheather-temp{
+  
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wheather-img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.wheather-icon{
+    color: white;
+   
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 100px;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  
+}
