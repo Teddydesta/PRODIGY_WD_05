@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {useFormik} from 'formik'
+// import {useFormik} from 'formik'
 
 import './weather.css'
 import search_icon from '../assets/search.png'
@@ -11,18 +11,18 @@ import rain_icon from '../assets/rainy.png'
 import wind_icon from '../assets/wind.png'
 import snow_icon from '../assets/snow.png'
 const WeatherApp = () => {
-  const {handleSubmit,}=useFormik({
-    initialValues: {
-      location: ""
-    },
-    onsubmit: values=>{
-      console.log('wait a sec')
-    }
-  });
+  // const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors}=useFormik({
+  //   initialValues: {
+  //     location: ""
+  //   },
+  //   onsubmit: values=>{
+  //     console.log('wait a sec')
+  //   }
+  // });
   let api_key="11cc9a451a4a09da6a7929e404bae6d3 ";
   const [weatherIcon, setWeatherIcon] = useState(cloud_icon);
-  const [location, setLocation]=useState("Addis Ababa");
-  const [error, setError] =useState(null);
+  // const [location, setLocation]=useState("Addis Ababa");
+  // const [error, setError] =useState(null);
 
   const search=async ()=>{
     
@@ -44,9 +44,9 @@ const WeatherApp = () => {
     const location=document.getElementsByClassName("location")
 
 //
-    humidity[0].innerHTML=Math.floor(data.main.humidity) + " %"
-    wind[0].innerHTML=Math.floor(data.wind.speed)+ " km/hr"
-    temp[0].innerHTML=Math.floor(data.main.temp)+ " %C"
+    humidity[0].innerHTML=Math.floor(data.main.humidity)+ " %"
+    wind[0].innerHTML=Math.floor(data.wind.speed)
+    temp[0].innerHTML=Math.floor(data.main.temp)
     location[0].innerHTML=data.name
 
     //
@@ -70,14 +70,13 @@ const WeatherApp = () => {
     //
     console.log(humidity[0].innerHTML=data.main.humidity)
     console.log(wind[0].innerHTML=data.wind.speed)
-    console.log(temp[0].innerHTML=data.main.temp)
     console.log( location[0].innerHTML=data.name)
 
     //
     console.log(data.weather[0].icon);
 
    }catch(e){
-    setError(err)
+    // setError(err)
    return console.log(err)
    }
 
@@ -85,8 +84,8 @@ const WeatherApp = () => {
   }
   return (
     <div className='container'>
-      <h2 className=''>Wheather Forecast</h2>
-      {/* Top search bar */}
+<center>      <h2 className='title'>Wheather Forecast</h2>
+</center>      {/* Top search bar */}
         <div className='search-input'>
             <input 
             placeholder='search'
@@ -100,7 +99,8 @@ const WeatherApp = () => {
         <div className='wheather-container'>
         
       <div className='temp-loc'>
-        <h3 className=''>Today</h3>
+        <h3 className='text'>Today</h3>
+        <hr className='hr' />
           {/* weather Temprature */}
           <div className='wheather-temp'></div>
         {/* Location */}
