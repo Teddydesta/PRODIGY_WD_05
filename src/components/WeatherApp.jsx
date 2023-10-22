@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 // import {useFormik} from 'formik'
-
+import {HiArrowLongLeft} from 'react-icons/hi2'
 import './weather.css'
 import search_icon from '../assets/search.png'
 import clear_icon from '../assets/clear.jpg'
@@ -44,10 +45,11 @@ const WeatherApp = () => {
     const location=document.getElementsByClassName("location")
 
 //
-    humidity[0].innerHTML=Math.floor(data.main.humidity)+ " %"
-    wind[0].innerHTML=Math.floor(data.wind.speed)
-    temp[0].innerHTML=Math.floor(data.main.temp)
-    location[0].innerHTML=data.name
+    humidity[0].innerHTML=Math.floor(data.main.humidity)+ "     %";
+    wind[0].innerHTML= Math.floor(data.wind.speed)+ "        km/h";
+    temp[0].innerHTML=Math.floor(data.main.temp) + "  ⁰C";
+    location[0].innerHTML=data.name;
+
 
     //
     if(data.weather[0].icon==="01d" || data.weather[0].icon==="01n"){
@@ -83,12 +85,20 @@ const WeatherApp = () => {
 
   }
   return (
-    <div className='container'>
-<center>      <h2 className='title'>Wheather Forecast</h2>
-</center>      {/* Top search bar */}
+  <div className='container'>
+     <div className='w-btn'>
+        <Link to='/' className="">
+                  <HiArrowLongLeft className='icon'></HiArrowLongLeft>
+
+        </Link>
+        </div>
+
+  <h2  >Analyze Your Day</h2>
+
+      {/* Top search bar */}
         <div className='search-input'>
             <input 
-            placeholder='search'
+            placeholder='type your location '
             type="text" className='input ' />
 
      
@@ -100,7 +110,6 @@ const WeatherApp = () => {
         
       <div className='temp-loc'>
         <h3 className='text'>Today</h3>
-        <hr className='hr' />
           {/* weather Temprature */}
           <div className='wheather-temp'></div>
         {/* Location */}
