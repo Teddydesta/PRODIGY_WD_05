@@ -31,11 +31,13 @@
 
 
 h2{
-  
-   font-size: 40px;
-  background: -webkit-linear-gradient(#eee, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    background: -webkit-linear-gradient(yellow, rgb(238, 115, 115));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .search-icon{
