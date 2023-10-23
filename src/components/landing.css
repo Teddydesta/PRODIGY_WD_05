@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-
     margin-top: 10px;
     height: 650px;
     width: 600px;
@@ -10,34 +9,39 @@
     border-radius: 20px;
     background-image: linear-gradient(to right, rgb(137, 137, 245),rgb(10, 120, 245) );
     gap: 20px;
+    justify-content: space-evenly;
 }
 .btn{ 
     
-   margin: auto;
+  
     align-items: center;
-    color: white;
+    align-items: center;
     justify-content: center;
-    border-style: solid;
-    border: 2px;
-    border-color: white;
-    border-radius: 10px;
-    background-color: rgb(137, 155, 238);
-    width: 150px;
-    height: 50px;
-    margin-top: 40px;
-    padding-bottom: 10px;
-   
-   
-}
-h3{
+    margin: auto;
+    width: 120px;
+    height: 60px;
     text-align: center;
-    justify-content: center;
+    border-radius: 20PX;
+    
+}
+
+h3{
+    margin: auto;
+    text-align: center;
     font-weight: bold;
+
 }
 .link{
     color: white;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
     
+    
+}
+.title{
+    text-align: center;
+    justify-content: center;
     
 }
 p{
@@ -51,20 +55,24 @@ h2{
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    background: -webkit-linear-gradient(#eee, #999);
+    background: -webkit-linear-gradient(white, grayscale);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 .img-container{
-    width: max-content;
+    width:  400px;
     align-items: center;
-    margin: auto;
-    height: 100px;
-    padding: 20px;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+  
+    
+  
 }
 .img{
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
     object-fit: cover;
+    margin-bottom: 20px;
 }

@@ -7,7 +7,7 @@
     border-radius: 20px;
     background-image: linear-gradient(to right, rgb(137, 137, 245),rgb(10, 120, 245) );
 }
-.w-btn{
+/* .w-btn{
    
     color: white;
     border-style: solid;
@@ -20,12 +20,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
+} */
 .icon{
     stroke-width: 4px;
-    font-size: 20px;
-    width: 48px;
-    height: 20px;
+    font-size: 35px;
+    width: 200px;
+    height: 35px;
     
 }
 
@@ -33,7 +33,7 @@
 h2{
   
    font-size: 40px;
-  background: -webkit-linear-gradient(#eee, #999);
+  background: -webkit-linear-gradient(#eee, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -74,7 +74,7 @@ input{
     height: 40PX;
     border: 1px;
     border-style: solid;
-    border-color: gray;
+    border-color: skyblue;
     border-radius: 10px;
     padding-left: 20px;
     font-size: 28px;
@@ -87,6 +87,12 @@ input{
     font-size: 32px;
     height: 90px;
     width: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.humidity-rate{
+    color: white;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -121,11 +127,12 @@ input{
 
     
 }
+
 .info{
    
     border: 2px;
     border-style: solid;
-    border-color: rgb(137, 137, 300);
+    border-color: skyblue;
     background-image: linear-gradient(to right, rgb(137, 137, 245),rgb(10, 120, 245) );
     font-size: 25px;
     width: auto ;
@@ -141,15 +148,6 @@ input{
 }
 
 
-
-/* .today{
-    color: white;
-    background-color: purple;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .wheather-container{
     
     align-items: start;
@@ -162,7 +160,7 @@ input{
     justify-content: center;
     border: 2px;
     border-style: solid;
-    border-color: rgb(137, 137, 300);
+    border-color: skyblue;
     background-image: linear-gradient(to right, rgb(137, 137, 245),rgb(10, 120, 245) );
     width: 500px;
     height: 200px;

@@ -45,8 +45,8 @@ const WeatherApp = () => {
     const location=document.getElementsByClassName("location")
 
 //
-    humidity[0].innerHTML=Math.floor(data.main.humidity)+ "     %";
-    wind[0].innerHTML= Math.floor(data.wind.speed)+ "        km/h";
+    humidity[0].innerHTML=Math.floor(data.main.humidity) + " %";
+    wind[0].innerHTML= Math.floor(data.wind.speed) + " km/h";
     temp[0].innerHTML=Math.floor(data.main.temp) + "  ⁰C";
     location[0].innerHTML=data.name;
 
