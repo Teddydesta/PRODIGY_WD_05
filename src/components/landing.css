@@ -42,6 +42,8 @@ h3{
 .title{
     text-align: center;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
 p{
@@ -60,7 +62,7 @@ h2{
     -webkit-text-fill-color: transparent;
 
 }
-.img-container{
+/* .img-container{
     width:  400px;
     align-items: center;
    align-items: center;
@@ -69,7 +71,7 @@ h2{
   
     
   
-}
+} */
 .img{
     border-radius: 10px;
     width: 100%;
