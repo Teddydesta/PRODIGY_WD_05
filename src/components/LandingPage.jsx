@@ -15,7 +15,7 @@ const LandingPage = () => {
         <div className='img-container'>
             <img
             className='img'
-            src="src/assets/weather_forecast.png" alt="" />
+            src="src/assets/cloud.png" alt="" />
         </div>
 
         <div className='btn'>
