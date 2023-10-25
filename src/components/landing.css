@@ -63,7 +63,7 @@ p{
     -webkit-text-fill-color: transparent;
 
 }
-/* .img-container{
+.img-container{
     width:  400px;
     align-items: center;
    align-items: center;
@@ -72,10 +72,10 @@ p{
   
     
   
-} */
-/* .img{
+} 
+ .img{
     border-radius: 10px;
     width: 100%;
     object-fit: cover;
     margin-bottom: 10px;
-} */
+}
